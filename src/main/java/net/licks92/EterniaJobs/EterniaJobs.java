@@ -1,13 +1,13 @@
 package net.licks92.EterniaJobs;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import net.licks92.EterniaCore.Plugin.EterniaPlugin;
 
-public class EterniaJobs extends JavaPlugin
+public class EterniaJobs extends EterniaPlugin
 {
 	@Override
 	public void onEnable()
 	{
-		
+		this.linkToCore(this.getName());
 	}
 	
 	@Override
